@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class CreateAdminsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('admins', function (Blueprint $table) {
             $table->bigIncrements('id')
-                ->comment('ユーザID');
+                ->comment('管理者ID');
 
             $table->string('name')
                 ->comment('名前');
@@ -30,14 +30,6 @@ class CreateUsersTable extends Migration
             $table->string('password')
                 ->comment('パスワード');
 
-            $table->datetime('last_login_at')
-                ->nullable()
-                ->comment('最終ログイン日時');
-
-            $table->unsignedTinyInteger('is_enabled')
-                ->default(1)
-                ->comment('有効フラグ（1: 有効）');
-
             $table->rememberToken();
             $table->timestamps();
         });
@@ -50,6 +42,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('admins');
     }
 }
