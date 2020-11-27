@@ -43,8 +43,3 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
 
     });
 });
-
-// Redirect all to the front-end router
-Route::get('/{pattern?}', function() {
-     return view('quasar');
- })->where('pattern', '.*');
