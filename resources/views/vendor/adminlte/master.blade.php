@@ -44,6 +44,7 @@
             <livewire:styles />
         @endif
     @endif
+    <link rel="stylesheet" href="{{ asset('css/admin/style.css') }}">
 
     {{-- Custom Stylesheets (post AdminLTE) --}}
     @yield('adminlte_css')
