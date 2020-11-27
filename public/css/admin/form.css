@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+.form-group.form-group-sm {
+  margin-bottom: 0.5rem;
+}
+.select2-container--classic .select-sm,
+.select2-container--bootstrap4 .select-sm,
+.select2-container--default .select-sm {
+  height: 1.9rem !important;
+  padding: 0rem 0;
+  margin-bottom: 0 !important;
+  border: 1px solid #ced4da;
+  border-radius: .2rem;
+}
+.select2-container--classic .select-sm.select2-selection--single .select2-selection__rendered,
+.select2-container--bootstrap4 .select-sm.select2-selection--single .select2-selection__rendered,
+.select2-container--default .select-sm.select2-selection--single .select2-selection__rendered {
+  line-height: 1.85rem !important;
+  padding-left: 0.5rem;
+  padding-right: 5rem;
+}
+.select2-container--classic .select-sm.select2-selection--single .select2-selection__arrow:after,
+.select2-container--bootstrap4 .select-sm.select2-selection--single .select2-selection__arrow:after,
+.select2-container--default .select-sm.select2-selection--single .select2-selection__arrow:after {
+  right: 0.5rem;
+}
+.select2-container--classic .select-sm.select2-selection--multiple,
+.select2-container--bootstrap4 .select-sm.select2-selection--multiple,
+.select2-container--default .select-sm.select2-selection--multiple {
+  min-height: 2.5125rem !important;
+  padding: 5px !important;
+}
+.select2-container--classic .select-sm.select2-selection--multiple .select2-selection__choice,
+.select2-container--bootstrap4 .select-sm.select2-selection--multiple .select2-selection__choice,
+.select2-container--default .select-sm.select2-selection--multiple .select2-selection__choice {
+  padding: 0.08rem 0.25rem !important;
+  font-size: 0.875rem;
+}
+.select2-container--classic .select-sm.select2-selection--multiple .select2-search--inline .select2-search__field,
+.select2-container--bootstrap4 .select-sm.select2-selection--multiple .select2-search--inline .select2-search__field,
+.select2-container--default .select-sm.select2-selection--multiple .select2-search--inline .select2-search__field {
+  padding: 0.25rem 0;
+}
+
+.row-font {
+  font-size: 20px;
+}
+.error-font {
+  font-size: 12.8px !important;
+}
+.error-detail-font {
+  font-size: 11.2px !important;
+}
+.custom-file-label,
+.custom-file-label::after {
+  height: auto;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
